@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut ico" href="favicon.ico" type="image/x-icon">
+    <title>FL DECO</title>
+
+    <style>
+         body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(117, 117, 117),rgb(199, 200, 203),rgb(199, 200, 203),rgb(117, 117, 117));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #02dd11;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #229f009d;
+        }
+
+        .active {
+            background-color: #229f009d;
+        }
+
+        h1 {
+            font-size: 50px;
+            background-color: black;
+            padding: 35px;
+            margin: 0;
+            color: #a903b5;
+        }
+
+        input[type=text],
+        input[type=email],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #b6bab6;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #209bf9;
+            color: rgb(0, 0, 0);
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #3250f9;
+        }
+
+        div.contenedor-formulario {
+            border-radius: 5px;
+            background-color: #f2f1f1;
+            padding: 20px;
+        }
+        .footer {
+            background-color: #02dd11;
+            color: #000000;
+            padding: 15px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+
+
+    <body>
+        <header>
+            <h1>FL DECO</h1>
+            <nav>
+                <ul>
+                    <li><a href="index (2).html">Home</a></li>
+                    <li><a href="Productos (2).html">Productos</a></li>
+                    <li><a href="Audiovisuales.html">Audiovisuales</a></li>
+                    <li><a class="active" href="Contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="contenedor-formulario">
+            <form>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribí aquí tu nombre" required minlength="3">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Escribí aquí tu apellido" required minlength="3">
+                <label for="mail">Email</label>
+                <input type="email" id="mail" name="apellido" placeholder="Escribí aquí tu mail">
+                <label for="país">País</label>
+                <select name="país" id="país">
+                    <option value="Argentina">Argentina</option>
+                </select>
+                <label for="comentario">Comentarios:</label>
+                <textarea name="comentario" id="comentario" placeholder="Escribí aquí tu comentario"></textarea>
+
+                <label for="motivo">Motivo de contacto</label>
+                <input type="radio" name="motivo" id="motivo"><i>Info de productos</i>
+                <input type="radio" name="motivo" id="motivo"><i>Comprar</i>
+                <input type="radio" name="motivo" id="motivo"><i>Presupuesto</i>
+                <input type="radio" name="motivo" id="motivo"><i>Reclamos</i>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+
+        <footer class="footer">
+            <p>Derechos Reservados &copy;2025</p>
+        </footer>
+    
+    
+    
+    </body>
+    </html>
+    
